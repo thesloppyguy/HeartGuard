@@ -1,11 +1,31 @@
-pip install virtual env
+##Run commands:-
 
-virtualenv env
+*pip install virtual env
 
-env/Scripts/activate
+*virtualenv env
 
-pip install -r requirements.txt
+*env/Scripts/activate
 
-FLASK_APP = app.py
+*pip install -r requirements.txt
 
-flask --debug run
+*FLASK_APP = app.py
+
+*flask --debug run
+
+###Note:- Python version 3.9
+
+##File structure:-
+
+###app.py- main backend with routes and logic
+
+###templates- html files
+
+###static-
+*assets
+*css
+*fonts
+*images
+*js
+*webfonts
+
+ML- machine learning files and algorithms
