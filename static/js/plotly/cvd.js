@@ -322,7 +322,7 @@ function plotFromCSV() {
       }];
       
       var layout = {
-        title: 'Effect of Alcohol Consumption on Absences'
+        title: 'Alcohol Consumption and Marital Status'
       };
     if( graphFifteen != null )
     Plotly.newPlot(graphFifteen, data, layout);
@@ -340,7 +340,7 @@ function plotFromCSV() {
       }];
       
       var layout = {
-        title: 'Effect of Alcohol Consumption on Absences'
+        title: 'Alcohol Consumption and Socio-Economic Status'
       };
     if( graphSixteen != null )
     Plotly.newPlot(graphSixteen, data, layout);
