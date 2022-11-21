@@ -47,8 +47,8 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
-      
-    Plotly.newPlot(graphOne, data, layout)
+    if( graphOne != null )  
+        Plotly.newPlot(graphOne, data, layout)
     
 
     //cvd second graph
@@ -69,6 +69,8 @@ function plotFromCSV() {
         xaxis: {title: "Systollic BP"}, 
         yaxis: {title: "Alcohol"}
       };
+      
+    if( graphTwo != null )  
       Plotly.newPlot(graphTwo, data, layout);
 
 
@@ -91,7 +93,7 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
-      
+    if( graphThree != null )  
     Plotly.newPlot(graphThree, data, layout)
 
     //performance second graph
@@ -101,6 +103,7 @@ function plotFromCSV() {
         y: failures,
         type: "bar",
       }];
+    if( graphFour != null )
     Plotly.newPlot(graphFour, data, layout);
 
 
@@ -121,6 +124,7 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
+    if( graphFive != null )  
     Plotly.newPlot(graphFive, data, layout);
 
     //performance fourth graph
@@ -134,6 +138,7 @@ function plotFromCSV() {
       var layout = {
         title: 'Effect of Alcohol Consumption on Absences'
       };
+    if( graphSix != null )
     Plotly.newPlot(graphSix, data, layout);
 
     //performance fifth graph
@@ -149,6 +154,7 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
+    if( graphSeven != null  )  
     Plotly.newPlot(graphSeven, data, layout);
 
     //performance sixth graph
@@ -168,6 +174,7 @@ function plotFromCSV() {
     layout =  {
         height: 640
       }
+    if( graphEight != null )
     Plotly.newPlot(graphEight, data, layout);
 
     //performance seven graph
@@ -185,6 +192,7 @@ function plotFromCSV() {
             line: { width: 2 }
         },
     }]
+    if( graphNine != null )
     Plotly.newPlot(graphNine, data, layout);
 
 
@@ -198,6 +206,7 @@ function plotFromCSV() {
       };
       
       var data = [trace1];
+      if( graphTen != null )
       Plotly.newPlot(graphTen, data);
 
 
@@ -222,6 +231,7 @@ function plotFromCSV() {
           },
         barmode: 'group'
       };  
+    if( graphEleven != null )
     Plotly.newPlot(graphEleven, data, layout);
 
 
@@ -245,6 +255,7 @@ function plotFromCSV() {
           },
           barmode: 'group'
       };  
+    if( graphTwelve != null )
     Plotly.newPlot(graphTwelve, data, layout);
 
 
@@ -269,7 +280,8 @@ function plotFromCSV() {
             zeroline: false
           },
           barmode: 'group'
-      };  
+      };
+    if( graphThirteen != null )  
     Plotly.newPlot(graphThirteen, data, layout);
 
     
@@ -294,6 +306,7 @@ function plotFromCSV() {
           },
           barmode: 'group'
       };  
+    if( graphFourteen != null )
     Plotly.newPlot(graphFourteen, data, layout);
       
     
@@ -311,6 +324,7 @@ function plotFromCSV() {
       var layout = {
         title: 'Effect of Alcohol Consumption on Absences'
       };
+    if( graphFifteen != null )
     Plotly.newPlot(graphFifteen, data, layout);
       
     
@@ -328,6 +342,7 @@ function plotFromCSV() {
       var layout = {
         title: 'Effect of Alcohol Consumption on Absences'
       };
+    if( graphSixteen != null )
     Plotly.newPlot(graphSixteen, data, layout);
       
 }

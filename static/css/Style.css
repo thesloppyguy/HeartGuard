@@ -226,6 +226,9 @@ nav {
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 10%);
 }
 
+#relations{
+    margin-top: 10rem;
+}
 #berger {
     background-color: #fff;
     width: 25px;
