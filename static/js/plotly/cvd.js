@@ -1,6 +1,6 @@
-const csvFileCVD = "../../static/datasets/CVD/CVD_DA.csv"
-const csvFilePerformance = "../../static/datasets/Performance/sp3.csv"
-const csvFileQOL = "../../static/datasets/QoL/QoL2.csv"
+const csvFileCVD = "../../datasets/CVD/CVD_DA.csv"
+const csvFilePerformance = "../../datasets/Performance/sp3.csv"
+const csvFileQOL = "../../datasets/QoL/QoL2.csv"
 const graphOne = document.getElementById("graphOne");
 const graphTwo = document.getElementById("graphTwo");
 const graphThree = document.getElementById("graphThree");
@@ -47,8 +47,8 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
-    if( graphOne != null )  
-        Plotly.newPlot(graphOne, data, layout)
+      
+    Plotly.newPlot(graphOne, data, layout)
     
 
     //cvd second graph
@@ -69,8 +69,6 @@ function plotFromCSV() {
         xaxis: {title: "Systollic BP"}, 
         yaxis: {title: "Alcohol"}
       };
-      
-    if( graphTwo != null )  
       Plotly.newPlot(graphTwo, data, layout);
 
 
@@ -93,7 +91,7 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
-    if( graphThree != null )  
+      
     Plotly.newPlot(graphThree, data, layout)
 
     //performance second graph
@@ -103,7 +101,6 @@ function plotFromCSV() {
         y: failures,
         type: "bar",
       }];
-    if( graphFour != null )
     Plotly.newPlot(graphFour, data, layout);
 
 
@@ -124,7 +121,6 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
-    if( graphFive != null )  
     Plotly.newPlot(graphFive, data, layout);
 
     //performance fourth graph
@@ -138,7 +134,6 @@ function plotFromCSV() {
       var layout = {
         title: 'Effect of Alcohol Consumption on Absences'
       };
-    if( graphSix != null )
     Plotly.newPlot(graphSix, data, layout);
 
     //performance fifth graph
@@ -154,7 +149,6 @@ function plotFromCSV() {
           zeroline: false
         }
       };  
-    if( graphSeven != null  )  
     Plotly.newPlot(graphSeven, data, layout);
 
     //performance sixth graph
@@ -174,7 +168,6 @@ function plotFromCSV() {
     layout =  {
         height: 640
       }
-    if( graphEight != null )
     Plotly.newPlot(graphEight, data, layout);
 
     //performance seven graph
@@ -192,7 +185,6 @@ function plotFromCSV() {
             line: { width: 2 }
         },
     }]
-    if( graphNine != null )
     Plotly.newPlot(graphNine, data, layout);
 
 
@@ -206,7 +198,6 @@ function plotFromCSV() {
       };
       
       var data = [trace1];
-      if( graphTen != null )
       Plotly.newPlot(graphTen, data);
 
 
@@ -231,7 +222,6 @@ function plotFromCSV() {
           },
         barmode: 'group'
       };  
-    if( graphEleven != null )
     Plotly.newPlot(graphEleven, data, layout);
 
 
@@ -255,7 +245,6 @@ function plotFromCSV() {
           },
           barmode: 'group'
       };  
-    if( graphTwelve != null )
     Plotly.newPlot(graphTwelve, data, layout);
 
 
@@ -280,8 +269,7 @@ function plotFromCSV() {
             zeroline: false
           },
           barmode: 'group'
-      };
-    if( graphThirteen != null )  
+      };  
     Plotly.newPlot(graphThirteen, data, layout);
 
     
@@ -306,7 +294,6 @@ function plotFromCSV() {
           },
           barmode: 'group'
       };  
-    if( graphFourteen != null )
     Plotly.newPlot(graphFourteen, data, layout);
       
     
@@ -322,9 +309,8 @@ function plotFromCSV() {
       }];
       
       var layout = {
-        title: 'Alcohol Consumption and Marital Status'
+        title: 'Effect of Alcohol Consumption on Absences'
       };
-    if( graphFifteen != null )
     Plotly.newPlot(graphFifteen, data, layout);
       
     
@@ -340,9 +326,8 @@ function plotFromCSV() {
       }];
       
       var layout = {
-        title: 'Alcohol Consumption and Socio-Economic Status'
+        title: 'Effect of Alcohol Consumption on Absences'
       };
-    if( graphSixteen != null )
     Plotly.newPlot(graphSixteen, data, layout);
       
 }
@@ -356,7 +341,7 @@ function getDataCVD(){
                 return e.split(",");
             }
         )
-        console.log(result);
+        console.log(result.length);
         processDataCVD(result)
         plotFromCSV();
     })
@@ -389,8 +374,8 @@ function getDataPerformance(){
             e => {
                 return e.split(",");
             }
-        )        
-        console.log(result);
+        )
+        console.log(result.length);
         processDataPerformance(result)
         plotFromCSV();
     })
@@ -447,7 +432,7 @@ function getDataQOL(){
                 return e.split(",");
             }
         )
-        console.log(result);
+        console.log(result.length);
         processDataQOL(result)
         plotFromCSV();
     })
