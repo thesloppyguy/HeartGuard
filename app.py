@@ -12,9 +12,6 @@ def index():
         pass
     return render_template('index.html')
 
-<<<<<<< HEAD
-=======
-
 @app.route('/relations')
 def relations():
     if request.method == 'POST':
@@ -69,7 +66,6 @@ def datasetsQuality():
 
 
 
->>>>>>> parent of a0169614 (finalv1.0)
 @app.route('/ML', methods=['POST', 'GET'])
 def AI():
     if request.method == 'POST':
