@@ -12,6 +12,64 @@ def index():
         pass
     return render_template('index.html')
 
+<<<<<<< HEAD
+=======
+
+@app.route('/relations')
+def relations():
+    if request.method == 'POST':
+        pass
+    return render_template('relations.html')
+
+@app.route('/relations/cardiovascular')
+def relationsCardio():
+    if request.method == 'POST':
+        pass
+    return render_template('relations/cardiovascular.html')
+
+
+@app.route('/relations/performance')
+def relationsPerformance():
+    if request.method == 'POST':
+        pass
+    return render_template('/relations/performance.html')
+
+
+@app.route('/relations/quality')
+def relationsQuality():
+    if request.method == 'POST':
+        pass
+    return render_template('/relations/performance.html')
+
+@app.route('/datasets')
+def datasets():
+    if request.method == 'POST':
+        pass
+    return render_template('datasets.html')
+
+@app.route('/datasets/cardiovascular')
+def datasetsCardio():
+    if request.method == 'POST':
+        pass
+    return render_template('datasets/cardiovascular.html')
+
+
+@app.route('/datasets/performance')
+def datasetsPerformance():
+    if request.method == 'POST':
+        pass
+    return render_template('/datasets/performance.html')
+
+
+@app.route('/datasets/quality')
+def datasetsQuality():
+    if request.method == 'POST':
+        pass
+    return render_template('/datasets/quality.html')
+
+
+
+>>>>>>> parent of a0169614 (finalv1.0)
 @app.route('/ML', methods=['POST', 'GET'])
 def AI():
     if request.method == 'POST':
