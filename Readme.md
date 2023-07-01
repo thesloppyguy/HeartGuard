@@ -1,7 +1,6 @@
 ## Resulting Platform
 
-![alt Website Image](.\static\assets\website.png)
-
+<img alt="Website Image" src=".\static\assets\website.png" />
 <p align="center">
 <img alt="Mobile App Image1" src=".\static\assets\mobile2.jpeg" />
 <img alt="Mobile App Image2" src=".\static\assets\mobile1.jpeg" />
